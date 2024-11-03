@@ -1,0 +1,7 @@
+ul > li {
+    @apply border-b border-gray-500 p-1;
+}
+
+ul > li:last-child {
+    @apply border-none;
+}
