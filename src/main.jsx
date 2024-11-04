@@ -4,12 +4,12 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Footer from "./components/Footer/Footer";
 import Users from "./components/Users/Users";
 import UserDetails from "./components/UserDetails/UserDetails";
 import Posts from "./components/Posts/Posts";
 import PostDetails from "./components/PostDetails/PostDetails";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import StatefulForm from "./components/StatefulForm/StatefulForm";
 // import App from "./App.jsx";
 
 const router = createBrowserRouter([
@@ -49,6 +49,10 @@ const router = createBrowserRouter([
                         `https://jsonplaceholder.typicode.com/posts/${params.postId}`,
                     ),
                 element: <PostDetails></PostDetails>,
+            },
+            {
+                path: "/form",
+                element: <StatefulForm></StatefulForm>,
             },
         ],
     },

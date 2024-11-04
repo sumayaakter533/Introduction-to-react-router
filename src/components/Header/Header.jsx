@@ -18,6 +18,9 @@ const Header = () => {
                 <NavLink className='btn btn-neutral' to='/posts'>
                     Posts
                 </NavLink>
+                <NavLink className='btn btn-neutral' to='/form'>
+                    Form
+                </NavLink>
             </nav>
         </div>
     );
