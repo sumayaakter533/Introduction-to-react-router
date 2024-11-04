@@ -1,13 +1,16 @@
 import React from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const PostDetails = () => {
     const post = useLoaderData();
+    const { postId } = useParams();
     const { id, title, body } = post;
     const navigate = useNavigate();
     const handleGoBack = () => {
         navigate(-1);
     };
+
+    console.log(postId);
 
     return (
         <div className='w-5/12 m-auto mb-10'>
