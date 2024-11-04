@@ -17,9 +17,6 @@ const Header = () => {
                 <Link className='btn btn-neutral' to='/posts'>
                     Posts
                 </Link>
-                <Link className='btn btn-neutral' to='/contact'>
-                    Contact
-                </Link>
             </nav>
         </div>
     );
